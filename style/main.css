@@ -1,0 +1,44 @@
+/*Declaração de Variável*/
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* O limite do que esta dentro não vão romper o limite da box */
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+header .container{
+    display: flex; /*Flex Box - Alinhar elementos em tela*/
+    flex-direction: row; /*Por padrão o Flex Box vem como alinhamento em linhas "Row"*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: space-between;/*alinhamento horizontal*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/* Evento de mouse em cima*/
+header nav a:hover{ 
+    color: #fff;
+}
